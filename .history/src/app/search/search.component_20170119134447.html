@@ -16,14 +16,17 @@
       <div class="col-md-12">
         <div class="search-res well">
           <h4>
-            <a routerLink="/artist/{{artist.id}}">
+            <a routerLink="/artist">
+
+
               {{ artist.name }}
-            </a>              
+            </a>
+              
           </h4>
           <div>
-            <strong>Genres:</strong>
-            <span *ngFor="let genre of artist.genres">{{genre}}</span>
-          </div>
+                <strong>Genres:</strong>
+                <span *ngFor="let genre of artist.genres">{{genre}}</span>
+              </div>
         </div>
       </div>
     </div>
