@@ -9,17 +9,13 @@ import { SpotifyService} from '../services/spotify.service';
 export class SearchComponent implements OnInit {
   searchStr:string;
 
-  constructor(private _spotifyService:SpotifyService) { }
+  constructor() { }
 
   ngOnInit() {
   }
 
   searchMusic(){
-    this._spotifyService.searchMusic(this.searchStr).subscribe(
-      res => {
-        console.log(res);
-      }
-    );
+    console.log(this.searchStr);
   }
 
 }

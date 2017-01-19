@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { AlertModule } from 'ng2-bootstrap/ng2-bootstrap';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -23,7 +23,7 @@ import {routing} from './app.routing';
     BrowserModule,
     FormsModule,
     HttpModule,
-    NgbModule.forRoot(),
+    AlertModule,
     routing
   ],
   providers: [],
